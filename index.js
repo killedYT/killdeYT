@@ -43,7 +43,7 @@ mclient.on('message', msg => {
 		const embed = new RichEmbed()
 			.setTitle("정보")
 			.setColor(0x3D85C6)
-			.setDescription( 방 이름 : " + msg.channel.name + "\n  서버 이름 : " + msg.guild.name + "\n  시간 : " + date.getHours() + '시 ' + date.getMinutes() + '분 ' + ' 입니다!')
+			.setDescription("방 이름 : " + msg.channel.name + "\n  서버 이름 : " + msg.guild.name + "\n  시간 : " + date.getHours() + '시 ' + date.getMinutes() + '분 ' + ' 입니다!')
 			msg.channel.send(embed);
 	}
 	
