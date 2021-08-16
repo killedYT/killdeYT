@@ -33,11 +33,11 @@ mclient.on('message', msg => {
 			.setDescription("안녕하세요! 저는 킬드봇 이에요! 반갑습니다!" + "\n  제 기능은 : " + "!도움,인사,!서버 정보 등이 있습니다!" + "\n 현재 시각 : " + date.getHours() + '시 ' + date.getMinutes() + '분 ' + ' 입니다.')
 			msg.author.sendMessage(embed);
 			msg.reply(" 님 안녕하세요! 도움말은 DM 으로 전송완료!");
-	};
+	}
 	
 	if(msg.content.startsWith("킬드 봇 안녕")) {
 		msg.reply(" 님 안녕하세요!");
-	};
+	}
 	
 	if(msg.content === botp + "정보") {
 		const embed = new RichEmbed()
@@ -45,9 +45,9 @@ mclient.on('message', msg => {
 			.setColor(0x3D85C6)
 			.setDescription( 방 이름 : " + msg.channel.name + "\n  서버 이름 : " + msg.guild.name + "\n  시간 : " + date.getHours() + '시 ' + date.getMinutes() + '분 ' + ' 입니다!')
 			msg.channel.send(embed);
-	};
+	}
 	
 	if(msg.content === botp + "시간") {
 		msg.reply(" 님 시간은 : " + date.getHours() + '시 ' + date.getMinutes() + '분 ' + ' 입니다!');
-	};
+	}
 });
